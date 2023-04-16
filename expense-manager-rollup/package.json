@@ -2,9 +2,12 @@
   "name": "expense-manager-rollup",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "public/index.js",
+  "files": [ "public "],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "rollup -c -w",
+    "build": "rollup"
+   
   },
   "keywords": [],
   "author": "",

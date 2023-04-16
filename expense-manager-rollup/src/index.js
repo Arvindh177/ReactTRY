@@ -4,7 +4,7 @@ var HelloWorld = require('./components/HelloWorld');
 
 ReactDOM.render(
     <React.StrictMode>
-        <HelloWorld />
+        <ExpressEntryItem/>
         </React.StrictMode>,
     document.getElementById('root')  
 );

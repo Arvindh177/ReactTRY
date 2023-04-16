@@ -1,4 +1,4 @@
-import babel from "@rollup/plugin-babel";
+import babel from '@rollup/plugin-babel';
 import resolve from '@rollup/pulgin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
@@ -9,7 +9,7 @@ export default {
     input: 'src/index.js',
     output: {
        file: 'public/index.js',
-       format: 'iife',
+       format: 'cjs',
     },
     plugins: [
        commonjs({
@@ -21,7 +21,7 @@ export default {
           ],
        }),
        resolve(),
-       babel({
+       babel.default({
           exclude: 'node_modules/**'
        }),
        replace({

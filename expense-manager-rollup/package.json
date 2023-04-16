@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "public/index.js",
-  "files": [ "public "],
+  "files": [
+    "public "
+  ],
   "scripts": {
     "start": "rollup -c -w",
     "build": "rollup"
-   
   },
   "keywords": [],
   "author": "",
@@ -21,8 +22,10 @@
     "regenerator-runtime": "^0.13.11"
   },
   "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@rollup/plugin-babel": "^6.0.3",
     "postcss": "8.1",
-    "rollup": "^3.20.2"
+    "rollup": "^3.20.3"
   }
 }
